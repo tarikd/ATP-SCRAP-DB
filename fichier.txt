@@ -1,0 +1,72 @@
+Wimbledon
+Great Britain
+('24.06.2013', '07.07.2013')
+Grass
+£10,514,000
+
+TOUR                  JOUEUR 1       JOUEUR 2       SCORE
+
+Fisrt Round         Djokovic, Novak       Mayer, Florian        6-3, 7-5, 6-4
+Fisrt Round         Reynolds, Bobby       Johnson, Steve        6-3, 7-5, 6-4
+Fisrt Round         Kavcic, Blaz       Struff, Jan-Lennard        6-3, 7-5, 6-4
+Fisrt Round         Harrison, Ryan       Chardy, Jeremy        6-3, 7-5, 6-4
+Fisrt Round         Simon, Gilles       Lopez, Feliciano        6-3, 7-5, 6-4
+Fisrt Round         Berankis, Ricardas       Mathieu, Paul-Henri        6-3, 7-5, 6-4
+Fisrt Round         Odesnik, Wayne       Wang, Jimmy        6-3, 7-5, 6-4
+Fisrt Round         Tursunov, Dmitry       Haas, Tommy        6-3, 7-5, 6-4
+Fisrt Round         Gasquet, Richard       Granollers, Marcel        6-3, 7-5, 6-4
+Fisrt Round         Haider-Maurer, Andreas       Soeda, Go        6-3, 7-5, 6-4
+Fisrt Round         Blake, James       de Bakker, Thiemo        6-3, 7-5, 6-4
+Fisrt Round         Tomic, Bernard       Querrey, Sam        6-3, 7-5, 6-4
+Fisrt Round         Anderson, Kevin       Rochus, Olivier        6-3, 7-5, 6-4
+Fisrt Round         Petzschner, Philipp       Przysiezny, Michal        6-3, 7-5, 6-4
+Fisrt Round         Brands, Daniel       Gimeno-Traver, Daniel        6-3, 7-5, 6-4
+Fisrt Round         Klizan, Martin       Berdych, Tomas        6-3, 7-5, 6-4
+Fisrt Round         Ferrer, David       Alund, Martin        6-3, 7-5, 6-4
+Fisrt Round         Bautista Agut, Roberto       Gabashvili, Teymuraz        6-3, 7-5, 6-4
+Fisrt Round         Zeballos, Horacio       Giraldo, Santiago        6-3, 7-5, 6-4
+Fisrt Round         Elias, Gastao       Dolgopolov, Alexandr        6-3, 7-5, 6-4
+Fisrt Round         Raonic, Milos       Berlocq, Carlos        6-3, 7-5, 6-4
+Fisrt Round         Kuznetsov, Alex       Sijsling, Igor        6-3, 7-5, 6-4
+Fisrt Round         Duckworth, James       Kudla, Denis        6-3, 7-5, 6-4
+Fisrt Round         Dodig, Ivan       Kohlschreiber, Philipp        6-3, 7-5, 6-4
+Fisrt Round         Nishikori, Kei       Ebden, Matthew        6-3, 7-5, 6-4
+Fisrt Round         Mayer, Leonardo       Bedene, Aljaz        6-3, 7-5, 6-4
+Fisrt Round         Llodra, Michael       Nieminen, Jarkko        6-3, 7-5, 6-4
+Fisrt Round         Istomin, Denis       Seppi, Andreas        6-3, 7-5, 6-4
+Fisrt Round         Dimitrov, Grigor       Bolelli, Simone        6-3, 7-5, 6-4
+Fisrt Round         Zemlja, Grega       Russell, Michael        6-3, 7-5, 6-4
+Fisrt Round         Pella, Guido       Levine, Jesse        6-3, 7-5, 6-4
+Fisrt Round         Ramos, Albert       Del Potro, Juan Martin        6-3, 7-5, 6-4
+Fisrt Round         Nadal, Rafael       Darcis, Steve        6-3, 7-5, 6-4
+Fisrt Round         Kubot, Lukasz       Andreev, Igor        6-3, 7-5, 6-4
+Fisrt Round         Robert, Stephane       Falla, Alejandro        6-3, 7-5, 6-4
+Fisrt Round         Ungur, Adrian       Paire, Benoit        6-3, 7-5, 6-4
+Fisrt Round         Isner, John       Donskoy, Evgeny        6-3, 7-5, 6-4
+Fisrt Round         Andujar, Pablo       Mannarino, Adrian        6-3, 7-5, 6-4
+Fisrt Round         Brown, Dustin       Garcia-Lopez, Guillermo        6-3, 7-5, 6-4
+Fisrt Round         Hewitt, Lleyton       Wawrinka, Stanislas        6-3, 7-5, 6-4
+Fisrt Round         Almagro, Nicolas       Zopp, Jurgen        6-3, 7-5, 6-4
+Fisrt Round         Matosevic, Marinko       Rufin, Guillaume        6-3, 7-5, 6-4
+Fisrt Round         Stepanek, Radek       Reid, Matt        6-3, 7-5, 6-4
+Fisrt Round         Edmund, Kyle       Janowicz, Jerzy        6-3, 7-5, 6-4
+Fisrt Round         Fognini, Fabio       Melzer, Jurgen        6-3, 7-5, 6-4
+Fisrt Round         Reister, Julian       Rosol, Lukas        6-3, 7-5, 6-4
+Fisrt Round         Dutra Silva, Rogerio       Stakhovsky, Sergiy        6-3, 7-5, 6-4
+Fisrt Round         Hanescu, Victor       Federer, Roger        6-3, 7-5, 6-4
+Fisrt Round         Tsonga, Jo-Wilfried       Goffin, David        6-3, 7-5, 6-4
+Fisrt Round         Roger-Vasselin, Edouard       Gulbis, Ernests        6-3, 7-5, 6-4
+Fisrt Round         Verdasco, Fernando       Malisse, Xavier        6-3, 7-5, 6-4
+Fisrt Round         Kamke, Tobias       Benneteau, Julien        6-3, 7-5, 6-4
+Fisrt Round         Monaco, Juan       Knittel, Bastian        6-3, 7-5, 6-4
+Fisrt Round         Lacko, Lukas       Ram, Rajeev        6-3, 7-5, 6-4
+Fisrt Round         De Schepper, Kenny       Lorenzi, Paolo        6-3, 7-5, 6-4
+Fisrt Round         Baghdatis, Marcos       Cilic, Marin        6-3, 7-5, 6-4
+Fisrt Round         Tipsarevic, Janko       Troicki, Viktor        6-3, 7-5, 6-4
+Fisrt Round         Kuznetsov, Andrey       Montanes, Albert        6-3, 7-5, 6-4
+Fisrt Round         Gicquel, Marc       Pospisil, Vasek        6-3, 7-5, 6-4
+Fisrt Round         Haase, Robin       Youzhny, Mikhail        6-3, 7-5, 6-4
+Fisrt Round         Robredo, Tommy       Bogomolov Jr., Alex        6-3, 7-5, 6-4
+Fisrt Round         Mahut, Nicolas       Hajek, Jan        6-3, 7-5, 6-4
+Fisrt Round         Ward, James       Lu, Yen-Hsun        6-3, 7-5, 6-4
+Fisrt Round         Becker, Benjamin       Murray, Andy        6-3, 7-5, 6-4
