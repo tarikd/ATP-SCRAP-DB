@@ -20,6 +20,8 @@ def make_soup(url):
     soup = BeautifulSoup(html, "html.parser")
     return soup
 
+soup = make_soup(URL)
+
 # Fonction qui récupère le nom du tournoi
 def get_tournament_title(soup):
     title = soup.find("a", "tournamentTitle").string
@@ -70,8 +72,10 @@ def get_player_name_first_round(soup):
 def get_player_name_first_round_winner(soup):
     colonne2 = soup.find("td", "col_2")
     playerWrap = colonne2.findAll("div", "playerWrap")
+    list_winner_first_round = []
     for name in playerWrap:
-    	print name.find("a").string
+        list_winner_first_round.append(name.a.string)
+    return list_winner_first_round
 
 # Fonction qui récupère le score du match du premier tour
 def get_player_score_first_round_winner(soup):
@@ -175,7 +179,12 @@ def get_player_score_seventh_round_winner(soup):
 #print get_tournament_prizemoney(BASE_URL)
 #get_player_name_first_round(BASE_URL)
 
-#get_player_name_first_round_winner(BASE_URL)
+i = 0 
+while i < len(get_player_name_first_round_winner(soup)):
+    winner = get_player_name_first_round_winner(soup)[i]
+    i+=1
+    print winner
+
 #get_player_score_first_round_winner(BASE_URL)
 
 #get_player_name_second_round_winner(BASE_URL)
@@ -196,7 +205,7 @@ def get_player_score_seventh_round_winner(soup):
 #get_player_name_seventh_round_winner(BASE_URL)
 #get_player_score_seventh_round_winner(BASE_URL)
 
-
+'''
 
 # Expérimentation pour récupérer les paramètres d'un même tournoi pour la période 1996-2013
 
@@ -235,7 +244,7 @@ for tournamentYear_url in tournamentYear_urls:
 mon_fichier.close
 
 
-
+'''
 
 
 

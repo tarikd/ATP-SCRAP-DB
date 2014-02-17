@@ -4,6 +4,7 @@ from bs4 import BeautifulSoup
 from urllib2 import urlopen
 import sys
 import os
+import shutil
 
 sys.setrecursionlimit(30000)
 
@@ -98,6 +99,9 @@ tournamentName_urls = [BASE_URL_NAME + str(rg) + "&y=2012"]
 
 soup = make_soup(URL)
 
+# Création du fichier
+mon_fichier = open(get_tournament_title(soup)+"_First_Round", "w")
+
 mon_fichier.write(get_tournament_title(soup)+"\n")
 mon_fichier.write(get_tournament_location(soup)+"\n")
 mon_fichier.write(str(get_tournament_surface(soup))+"\n")
@@ -125,3 +129,13 @@ for tournamentYear_url in tournamentYear_urls:
         mon_fichier.write("\n")        
         i+=2
     tournamentYear+=1
+
+
+if not os.path.exists("Wimbledon"):
+    os.makedirs("Wimbledon")
+
+shutil.move(get_tournament_title(soup)+"_First_Round", "Wimbledon/")
+
+
+
+

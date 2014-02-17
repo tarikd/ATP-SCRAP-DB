@@ -8,6 +8,7 @@ import shutil
 
 sys.setrecursionlimit(30000)
 
+
 # Fonction qui renvoie le html parsé
 def make_soup(url):
     html = urlopen(url).read()
@@ -49,34 +50,31 @@ def get_tournament_prizemoney(soup):
 
 ######################################################################################################
 
-# Fonction qui récupère le nom et prénom de tous les gagnants du premier tour
-def get_player_name_first_round_winner(soup):
-    colonne2 = soup.find("td", "col_2")
-    playerWrap = colonne2.findAll("div", "playerWrap")
-    list_winner_first_round = []
+def get_player_name_sixth_round_winner(soup):
+    colonne7 = soup.find("td", "col_7")
+    playerWrap = colonne7.findAll("div", "playerWrap")
+    list_winner_sixth_round = []
     for name in playerWrap:
-        list_winner_first_round.append(name.a.string)
-    return list_winner_first_round
+        list_winner_sixth_round.append(name.a.string)
+    return list_winner_sixth_round
 
 ######################################################################################################
 
-# Fonction qui récupère le nom et prénom de tous les gagnants du deuxième tour
-def get_player_name_second_round_winner(soup):
-    colonne3 = soup.find("td", "col_3")
-    playerWrap = colonne3.findAll("div", "playerWrap")
-    list_winner_second_round = []
+def get_player_name_seventh_round_winner(soup):
+    colonne8 = soup.find("td", "col_8")
+    playerWrap = colonne8.findAll("div", "playerWrap")
+    list_winner_seventh_round = []
     for name in playerWrap:
-        list_winner_second_round.append(name.a.string)
-    return list_winner_second_round
+        list_winner_seventh_round.append(name.a.string)
+    return list_winner_seventh_round
 
-# Fonction qui récupère le score du match du deuxième tour
-def get_player_score_second_round_winner(soup):
-    colonne3 = soup.find("td", "col_3")
-    scores = colonne3.findAll("div", "scores")
-    list_score_second_round = []
+def get_player_score_seventh_round_winner(soup):
+    colonne8 = soup.find("td", "col_8")
+    scores = colonne8.findAll("div", "scores")
+    list_score_seventh_round = []
     for score in scores:
-        list_score_second_round.append(score.a.string)
-    return list_score_second_round
+        list_score_seventh_round.append(score.a.string)
+    return list_score_seventh_round
 
 ######################################################################################################
 
@@ -99,17 +97,15 @@ tournamentName_urls = [BASE_URL_NAME + str(rg) + "&y=2012"]
 soup = make_soup(URL)
 
 # Création du fichier
-mon_fichier = open(get_tournament_title(soup)+"_Second_Round", "w")
+mon_fichier = open(get_tournament_title(soup)+"_Final_Round", "w")
 
 mon_fichier.write(get_tournament_title(soup)+"\n")
 mon_fichier.write(get_tournament_location(soup)+"\n")
 mon_fichier.write(str(get_tournament_surface(soup))+"\n")
-mon_fichier.write(str(get_tournament_prizemoney(soup))+"\n")
 mon_fichier.write(""+"\n")
 
 
-
-mon_fichier.write('{ANNEE:<10} {TOUR:<15} {JOUEUR1:<25} {JOUEUR2:<25} {GAGNANT:<25} {SCORE}'.format(ANNEE="ANNEE", TOUR="TOUR", JOUEUR1="JOUEUR1", JOUEUR2="JOUEUR2", GAGNANT="GAGNANT", SCORE="SCORE"))
+mon_fichier.write('{ANNEE:<10} {PRIZEMONEY:<15} {TOUR:<15} {JOUEUR1:<25} {JOUEUR2:<25} {GAGNANT:<25} {SCORE}'.format(ANNEE="ANNEE", PRIZEMONEY="PRIZEMONEY", TOUR="TOUR", JOUEUR1="JOUEUR1", JOUEUR2="JOUEUR2", GAGNANT="GAGNANT", SCORE="SCORE"))
 mon_fichier.write("\n\n")
 
 tournamentYear = 1996
@@ -120,21 +116,22 @@ for tournamentYear_url in tournamentYear_urls:
     j = 0
     soup = make_soup(tournamentYear_url)
 
-    while i < len(get_player_name_second_round_winner(soup)):
-        winner = get_player_name_second_round_winner(soup)[n]
-        score = get_player_score_second_round_winner(soup)[n]
+    while i < len(get_player_name_seventh_round_winner(soup)):
+        winner = get_player_name_seventh_round_winner(soup)[n]
+        score = get_player_score_seventh_round_winner(soup)[n]
         n+=1
-        mon_fichier.write('{tournamentYear:<10} {Round:<15} {Player1:<25} {Player2:<25} {Gagnant:<25} {Score}'.format(tournamentYear=str(tournamentYear), Round=str("Second Round"), Player1=get_player_name_first_round_winner(soup)[j], Player2=get_player_name_first_round_winner(soup)[j+1], Gagnant=winner, Score=score))
+        prize = get_tournament_prizemoney(soup)
+        mon_fichier.write('{tournamentYear:<10} {Prize:<15} {Round:<15} {Player1:<25} {Player2:<25} {Gagnant:<25} {Score}'.format(tournamentYear=str(tournamentYear), Prize=prize, Round=str("Final Round"), Player1=get_player_name_sixth_round_winner(soup)[j], Player2=get_player_name_sixth_round_winner(soup)[j+1], Gagnant=winner, Score=score))
         mon_fichier.write("\n")        
         j+=2
         i+=1
     tournamentYear+=1
 
-
 if not os.path.exists("Wimbledon"):
     os.makedirs("Wimbledon")
 
-shutil.move(get_tournament_title(soup)+"_Second_Round", "Wimbledon/")
+shutil.move(get_tournament_title(soup)+"_Final_Round", "Wimbledon/")
+
 
 
 
