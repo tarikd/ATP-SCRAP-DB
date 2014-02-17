@@ -8,8 +8,6 @@ import shutil
 
 sys.setrecursionlimit(30000)
 
-mon_fichier = open("fichier.txt", "w")
-
 # Fonction qui renvoie le html parsé
 def make_soup(url):
     html = urlopen(url).read()
@@ -131,10 +129,20 @@ for tournamentYear_url in tournamentYear_urls:
     tournamentYear+=1
 
 
-if not os.path.exists("Wimbledon"):
-    os.makedirs("Wimbledon")
+#######################################################################################################
 
-shutil.move(get_tournament_title(soup)+"_First_Round", "Wimbledon/")
+# On vérifie que le dossier du tournoi existe, sinon on le crée
+if not os.path.exists(get_tournament_title(soup)):
+    os.makedirs(get_tournament_title(soup))
+
+# On vérifie si le fichier existe, si c'est le cas on le supprime
+myfile = get_tournament_title(soup)+"/"+get_tournament_title(soup)+"_First_Round"
+
+if os.path.isfile(myfile):
+    os.remove(myfile)
+
+# On déplace le fichier produit dans le dossier du tournoi
+shutil.move(get_tournament_title(soup)+"_First_Round", get_tournament_title(soup)+"/")
 
 
 
