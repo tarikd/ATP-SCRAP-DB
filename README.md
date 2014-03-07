@@ -1,4 +1,4 @@
-# ATP SCRAP DB
+ATP SCRAP DB
 ------------
 
 I'm trying to build a scrapper that will allow me to create a database of all the ATP tournaments since 1996.
@@ -39,7 +39,7 @@ ANNEE           PRIZEMONEY      TOUR            RANK1 JOUEUR1                   
 26.08.2013      $16,102,000     Final Round     1     Djokovic, Novak           2     Nadal, Rafael             Nadal, Rafael             6-2, 3-6, 6-4, 6-1
 ```
 
-# Improvement to come
+Improvement to come
 ---------------------
 
 There is still room for improvement especially on the runtime front.
